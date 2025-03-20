@@ -63,9 +63,39 @@ h3{
 }
 
 table{
-    border: 1px;
+    border: 2px solid black;
     border-color: black;
     border-radius: 10px;
+    margin: 0 auto;
+    border-collapse: collapse;
 
 }
-        
+table tr td {
+    padding: 20px;
+}
+table tr th {
+    background-color: #384c8c;
+
+}    
+
+
+.laranja{
+    background-color: rgb(248, 137, 10);
+}  
+.azul{
+    background-color: rgba(12, 12, 243, 0.836);
+} 
+.roxa{
+    background-color: rgb(247, 10, 247);
+}
+.preta{
+    background-color: black;
+    color: white;
+}
+.verde{
+    background-color: rgb(10, 241, 10);
+}
+.vermelha{
+    background-color:red;
+}
+
