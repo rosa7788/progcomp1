@@ -99,3 +99,8 @@ table tr th {
     background-color:red;
 }
 
+.campos {
+    margin-bottom: 10px;
+    border-bottom: 20px;
+}
+
