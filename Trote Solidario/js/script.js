@@ -16,6 +16,7 @@ function calcular(){
    soma = soma + Number(15* kit)
    //
    let equipe = document.getElementById("equipe").value
+
    //recupera a cor da equipe
    if (equipe == "Laranja") {
     //equipe é laranja
@@ -50,6 +51,29 @@ function calcular(){
    soma = soma + Number(1 * oleo)
    //devolve o resultado para o HTML
    document.getElementById("soma").innerHTML = soma.toFixed(2)
+
+   let sangue = Number(document.getElementById("sangue").value);
+   let pontosSangue = 0;
+
+   if (equipe == "Laranja") {
+    if (sangue >=49) {
+        pontosSangue = 2500 + ((sangue-49)*20);
+    } else {
+        pontosSangue = sangue*20;
+    }
+   } 
+   else if (equipe == "Preta"){
+    if (sangue >= 52){
+        pontosSangue = 2500 + (sangue - 52)*20
+    }
+    else {
+        pontosSangue = sangue * 20
+    }
+}
+
+
+
+
 
 
 }
