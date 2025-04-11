@@ -34,7 +34,7 @@ function calcular(){
         }
         else pontosKit = 0
     }
-    alert (pontosKit)
+
    let suplemento= document.getElementById("suplemento").value;
    soma = soma + Number(30 * suplemento)
    //
@@ -60,21 +60,41 @@ function calcular(){
         pontosSangue = 2500 + ((sangue-49)*20);
     } else {
         pontosSangue = sangue*20;
-    }
-   } 
-   else if (equipe == "Preta"){
+    } 
+    } else if (equipe == "Preta"){
     if (sangue >= 52){
         pontosSangue = 2500 + (sangue - 52)*20
     }
     else {
         pontosSangue = sangue * 20
+    } 
+    } else if (equipe == "Roxa") { // equipe roxa
+    if (sangue >= 51) {
+        pontosSangue = 2500 + ((sangue-51)*20);
+    } else {
+        pontosSangue = sangue*20;
+    }
+    } else if (equipe == "Verde") { // equipe verde
+    if (sangue >= 44) {
+        pontosSangue = 2500 + ((sangue-44)*20);
+    } else {
+        pontosSangue = sangue*20;
+    }
+    } else { // equipe vermelha
+    if (sangue >= 47) {
+        pontosSangue = 2500 + ((sangue-47)*20);
+    } else {
+        pontosSangue = sangue*20;
     }
 }
 
+soma += pontosSangue; // soma a pontuação da doação de sangue a pontuação total
 
-
-
-
-
+document.getElementById("soma").innerHTML = soma.toFixed(2); // devolve o resultado para o HTML
 }
+
+
+
+
+
 
